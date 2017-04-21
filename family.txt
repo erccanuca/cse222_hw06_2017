@@ -1,0 +1,7 @@
+Hasan
+Ayse,Hasan,ebu-Ayse
+Ali,Ayse,ibn-Hasan
+Sema,Hasan,ebu-Ayse
+Ercan,Ali,ibn-Ali
+Seray,Sema,ebu-Sema
+Cahit,Hasan,ebu-Ayse
