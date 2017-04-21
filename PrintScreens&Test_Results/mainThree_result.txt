@@ -1,0 +1,19 @@
+********** Family.txt test toString ***************
+Hasan
+  Ayse
+    Ali
+      Ercan
+        null
+        null
+      null
+    Sema
+      Seray
+        null
+        null
+      Cahit
+        null
+        null
+  null
+
+********** Family.txt Test Level-order **************
+Hasan Ayse Ali Sema Ercan Seray Cahit 

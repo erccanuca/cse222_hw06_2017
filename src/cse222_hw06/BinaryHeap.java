@@ -8,32 +8,59 @@ package cse222_hw06;
 import java.util.Queue;
 
 /**
- *
+ * This class my binary heap class extends Binary tree and  implements Queue
  * @author ercan
+ * E any type
  */
 public class BinaryHeap<E extends Comparable<E>> extends BinaryTree<E> implements Queue<E>{
-    
+    /**
+     * Heap capacity
+     */
     private static final int CAPACITY = 11;
+    /**
+     * heap size
+     */
     private int heapsize = 0;
+    /**
+     * capacity of heap
+     */
     private int capacity = 0;
-    private E[] heap; 
+    /**
+     * heap array
+     */
+    private E[] heap;
 
+    /**
+     * default contructor
+     */
     public BinaryHeap() {
         this.capacity = CAPACITY;
         this.heap = (E[])new Comparable[capacity];
         this.heapsize = 0;
     }
 
+    /**
+     * Look heap is empty
+     * @return true if is empty other wise false.
+     */
     @Override
     public boolean isEmpty(){
        return (heapsize == 0);
     }
-    
+
+    /**
+     * look size of heap
+     * @return size of heap
+     */
     @Override
     public int size(){
         return heapsize;
     }
-    
+
+    /**
+     * find max priorty element
+     * @return min element with high priorty
+     */
     public Comparable findMin(){
         if(isEmpty()){
             throw new NullPointerException();
@@ -60,7 +87,11 @@ public class BinaryHeap<E extends Comparable<E>> extends BinaryTree<E> implement
 	int index = percolateUp(heapsize,data); // pass in the last index and inserted value -> return the correct location
 	heap[index] = data; 
     }
-    
+
+    /**
+     * Delete min element from heap
+     * @return deleted element
+     */
     public Comparable deleteMin(){
         if(isEmpty())
             throw new NullPointerException();
@@ -72,11 +103,21 @@ public class BinaryHeap<E extends Comparable<E>> extends BinaryTree<E> implement
         
         return minValue;   
     }
+
+    /**
+     * Clear heap
+     */
     @Override
     public void clear(){
         heap = (E[])new Comparable[CAPACITY];
         heapsize = 0;
     }
+
+    /**
+     * Get element with index
+     * @param i index of heap
+     * @return index of element
+     */
     public E get(int i){
         return heap[i];
     }
@@ -125,7 +166,11 @@ public class BinaryHeap<E extends Comparable<E>> extends BinaryTree<E> implement
         }
         return hole;
     }
-    
+
+    /**
+     * show our heap
+     * @return information about this class.
+     */
     @Override
     public String toString(){
         String str= "";

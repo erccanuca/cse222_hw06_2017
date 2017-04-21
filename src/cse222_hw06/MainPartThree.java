@@ -12,7 +12,7 @@ import java.util.Iterator;
 import java.util.Scanner;
 
 /**
- *
+ * Part three main class
  * @author ercan
  */
 public class MainPartThree {

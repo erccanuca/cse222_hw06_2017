@@ -10,7 +10,7 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 /**
- *
+ * Part two main class
  * @author ercan
  */
 public class MainPartTwo {

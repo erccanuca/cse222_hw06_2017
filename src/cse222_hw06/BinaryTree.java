@@ -74,6 +74,9 @@ public class BinaryTree<E> extends PriorityQueue<E> implements Serializable {
     /**
      * Constructs a new binary tree with data in its root,leftTree
      * as its left subtree and rightTree as its right subtree.
+     * @param data E type data
+     * @param leftTree left binary tree
+     * @param rightTree right binary tree
      */
     public BinaryTree(E data, BinaryTree<E> leftTree,
             BinaryTree<E> rightTree) {
@@ -201,7 +204,7 @@ public class BinaryTree<E> extends PriorityQueue<E> implements Serializable {
      *      of the binary tree. The line "null" indicates a null tree.
      * @param bR The input file
      * @return The binary tree
-     * throws IOException If there is an input error
+     * @throws IOException If there is an input error
      */
     public static BinaryTree<String> readBinaryTree(BufferedReader bR)
             throws IOException {
